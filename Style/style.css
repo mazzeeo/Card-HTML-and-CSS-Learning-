@@ -1,0 +1,101 @@
+/* Variáveis CSS */
+:root {
+    --color-green: hsl(75, 94%, 57%);
+    --color-white: hsl(0, 0%, 100%);
+    --color-grey-700: hsl(0, 0%, 20%);
+    --color-grey-800: hsl(0, 0%, 12%);
+    --color-grey-900: hsl(0, 0%, 8%);
+    --spacing-10: 10px;
+    --spacing-20: 20px;
+}
+
+/* Reset CSS - seletor universal * === todos elementos da página */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--color-grey-900);
+    font-family: "Inter", sans-serif;
+    background-image: 
+    repeating-linear-gradient(
+      45deg,
+      rgba(172, 255, 47, 0.03) 0px,
+      rgba(172, 255, 47, 0.03) 1px,
+      transparent 1px,
+      transparent 10px
+    );
+}
+
+ol, ul {
+    list-style: none;
+}
+
+.container {
+    background-color: var(--color-grey-800);
+    color: var(--color-white);
+    width: 400px;
+    text-align: center;
+    padding:  var(--spacing-20);
+    margin: 175px auto;
+    border-radius: 10px;
+}
+
+.container img {
+    border-radius: 50%;
+    border: 3px solid var(--color-white);
+    transition: .5s;
+}
+
+.container img:hover {
+    border-color: var(--color-green);
+    scale: 1.1;
+    cursor: pointer;
+    /* rotate: 1440deg; */
+}
+
+.container h1 {
+    font-size: 38px;
+    font-weight: 300;
+    margin-block: var(--spacing-10);
+}
+
+.container h2 {
+    color: var(--color-green);
+    font-size: 26px;
+    font-weight: 200;
+    margin-block-end: var(--spacing-10);
+}
+
+.container p {
+    font-size: 13px;
+    font-weight: 200;
+    margin-block: var(--spacing-10);
+}
+
+.social li {
+    background-color: var(--color-grey-700);
+    margin-block: var(--spacing-10);
+    border-radius: 8px;
+    
+}
+
+.social a {
+    color: var(--color-white);
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 400;
+    display: block;
+    padding-block: var(--spacing-10);
+    border-radius: 8px;
+    transition: .5s;
+}
+
+.social a:hover{
+    background-color: var(--color-green);
+    color: var(--color-grey-900);
+    scale: 1.05;
+}
